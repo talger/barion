@@ -43,7 +43,7 @@
         "barion/barion-web-php": "^1.4"
     },
     "suggest": {
-        "cweagans/composer-patches": "Patch BarionClient for PSR-4 autoloading",
+        "cweagans/composer-patches": "Patch BarionClient for PSR-4 autoloading"
     },
     "extra": {
         "patches": {
