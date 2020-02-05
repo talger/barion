@@ -1,0 +1,52 @@
+{
+    "name": "talger/barion",
+    "description": "Metapackage for the Barion offical PHP library",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tálos Gergely",
+            "email": "gergely@talos.hu"
+        },
+        {
+            "name": "Barion developers",
+            "homepage": "https://github.com/barion/barion-web-php/graphs/contributors"
+        }
+    ],
+    "homepage": "https://github.com/barion/barion-web-php",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "barion/barion-web-php",
+                "version": "1.4.2",
+                "dist": {
+                    "url": "https://github.com/barion/barion-web-php/archive/v1.4.2.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/barion/barion-web-php.git",
+                    "type": "git",
+                    "reference": "v1.4.2"
+                },
+                "autoload": {
+                    "classmap": ["library/"],
+                    "files": ["library/common/Constants.php"]
+                }
+            }
+        }
+    ],
+    "require": {
+        "barion/barion-web-php": "^1.4"
+    },
+    "suggest": {
+        "cweagans/composer-patches": "Patch BarionClient for PSR-4 autoloading",
+    },
+    "extra": {
+        "patches": {
+            "barion/barion-web-php": {
+                "Remove the include of loader.php": "resources/patches/remove-include-loader.patch"
+            }
+        }
+    }
+}

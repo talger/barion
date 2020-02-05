@@ -1,0 +1,12 @@
+diff --git a/library/BarionClient.php b/library/BarionClient.php
+index 8d2ddb1..fac5806 100755
+--- a/library/BarionClient.php
++++ b/library/BarionClient.php
+@@ -23,7 +23,6 @@
+ *  
+ */
+ 
+-include 'helpers' . DIRECTORY_SEPARATOR . 'loader.php';
+ 
+ class BarionClient
+ {
