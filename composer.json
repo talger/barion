@@ -31,7 +31,10 @@
                 },
                 "autoload": {
                     "classmap": ["library/"],
-                    "files": ["library/common/Constants.php"]
+                    "files": [
+                        "library/common/Constants.php",
+                        "library/BarionClient.php"
+                    ]
                 }
             }
         }
